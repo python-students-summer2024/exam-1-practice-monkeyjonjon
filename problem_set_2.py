@@ -34,23 +34,23 @@ def weather_helper():
   if not -70 <= current_temp <= 134:
       print("Invalid temperature!")
   elif current_temp < 40:
-      is_snow = input("Is it snowing? ").lower()
+      is_snow = input("Is it snowing? ").lower().strip()
       if is_snow in ["yes", "yeah", "yup"]:
-          is_jacket = input("Are you wearing a jacket? ").lower()
+          is_jacket = input("Are you wearing a jacket? ").lower().strip()
           if is_jacket in ["yes", "yeah", "yup"]:
               print("Glad to hear you're dressed appropriately!")
           elif is_jacket in ["no", "nah", "nope"]:
               print("What were you thinking when you left home today?!")
       elif is_snow in ["no", "nah", "nope"]:
-          is_rain = input("Is it raining then? ").lower()
+          is_rain = input("Is it raining then? ").lower().strip()
           if is_rain in ["yes", "yeah", "yup"]:
-              is_umbrella = input("Did you bring an umbrella? ").lower()
+              is_umbrella = input("Did you bring an umbrella? ").lower().strip()
               if is_umbrella in ["yes", "yeah", "yup"]:
                   print("Good job staying dry!")
               elif is_umbrella in ["no", "nah", "nope"]:
                   print("You must enjoy getting wet!")
   elif current_temp > 90:
-      is_ac = input("Do you have air conditioning? ").lower()
+      is_ac = input("Do you have air conditioning? ").lower().strip()
       if is_ac in ["yes", "yeah", "yup"]:
           print("Stay cool indoors.")
       elif is_ac in ["no", "nah", "nope"]:

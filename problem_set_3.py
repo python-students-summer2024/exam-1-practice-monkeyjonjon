@@ -90,5 +90,7 @@ def play_game():
     elif result == False:
         print("Wrong!")
     
-    win_rate = int((correct_guesses/total_games) * 100)
-    print(f"You guessed {win_rate}% of the random numbers correctly.")
+    #win_rate = int((correct_guesses/total_games) * 100)
+    win_rate = correct_guesses/total_games
+    win_rate = format(win_rate, '.0%')
+    print(f"You guessed {win_rate} of the random numbers correctly.")
